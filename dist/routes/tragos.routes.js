@@ -55,7 +55,7 @@ tragoRoutes.post('/', (req, res) => {
         });
     });
 });
-tragoRoutes.put('/', (req, res) => {
+tragoRoutes.put('/:id', (req, res) => {
     const tragoId = req.params.id;
     const trago = {
         nombre: req.body.nombre,

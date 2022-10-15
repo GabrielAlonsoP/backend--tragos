@@ -59,7 +59,7 @@ tragoRoutes.post('/', (req:Request, res:Response)=>{
 
 });
 
-tragoRoutes.put('/', (req:Request, res:Response)=>{
+tragoRoutes.put('/:id', (req:Request, res:Response)=>{
 
     const tragoId = req.params.id;
     const trago = {
