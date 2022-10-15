@@ -25,11 +25,11 @@ tragoRoutes.get('/pagin', (req, res) => __awaiter(void 0, void 0, void 0, functi
     });
 }));
 tragoRoutes.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const sneaker = yield trago_model_1.Trago.find();
+    const trago = yield trago_model_1.Trago.find();
     return res.json({
         ok: true,
         msj: "Get OK",
-        Trago: trago_model_1.Trago
+        trago
     });
 }));
 tragoRoutes.post('/', (req, res) => {

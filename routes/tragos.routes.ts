@@ -22,12 +22,12 @@ tragoRoutes.get('/pagin', async (req:Request, res:Response)=>{
 
 tragoRoutes.get('/', async (req:Request, res:Response) => {
 
-        const sneaker = await Trago.find();
+        const trago = await Trago.find();
 
         return res.json({
             ok:true,
             msj: "Get OK",
-            Trago
+            trago
         })
 });
 
