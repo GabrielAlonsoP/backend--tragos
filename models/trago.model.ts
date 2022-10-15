@@ -25,4 +25,4 @@ interface ITrago extends Document{
     precio: string;
 }
 
-export const Trago = model<ITrago>('Sneaker', tragoSchema);
+export const Trago = model<ITrago>('Trago', tragoSchema);

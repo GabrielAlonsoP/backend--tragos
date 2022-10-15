@@ -1,5 +1,5 @@
 import { Request, Response, Router } from "express";
-import { Trago } from "../models/sneaker.model";
+import { Trago } from "../models/trago.model";
 
 
 const tragoRoutes = Router();

@@ -2,7 +2,7 @@ import Server from "./classes/server";
 import defaulRoutes from "./routes/default.routes";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
-import tragoRoutes from "./routes/sneaker.routes";
+import tragoRoutes from "./routes/tragos.routes";
 import cors from 'cors'
 
 
@@ -14,7 +14,7 @@ server.app.use(bodyParser.urlencoded({extended:true}))
 server.app.use('/',defaulRoutes);
 server.app.use('/trago', tragoRoutes);
 
-mongoose.connect('mongodb+srv://usr_sneakers:sneakers2022@cluster0.ehz8x8y.mongodb.net/sneakersDb', (error)=>{
+mongoose.connect('mongodb+srv://gasper_tragos:<password>@cluster0.4cipbhc.mongodb.net/tragosDb', (error)=>{
     if(error){
         throw error;
     }
