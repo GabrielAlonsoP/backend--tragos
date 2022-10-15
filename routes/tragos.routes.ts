@@ -62,12 +62,7 @@ tragoRoutes.post('/', (req:Request, res:Response)=>{
 tragoRoutes.put('/', (req:Request, res:Response)=>{
 
     const tragoId = req.params.id;
-    const trago = {
-        nombre: req.body.nombre,
-        origen: req.body.origen,
-        imagen: req.body.imagen,
-        precio: req.body.precio
-    }
+    const trago = req.body;
 
     Trago.findByIdAndUpdate(tragoId, trago).then(tragoDb=>{
         return res.json({
