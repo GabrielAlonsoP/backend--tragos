@@ -74,7 +74,6 @@ tragoRoutes.put('/', (req:Request, res:Response)=>{
 });
 
 tragoRoutes.delete('/', (req:Request, res:Response)=>{
-
     const tragoId = req.query.id;
     Trago.findByIdAndDelete(tragoId).then(tragoDb=>{
         return res.json({
