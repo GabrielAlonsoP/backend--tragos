@@ -14,7 +14,7 @@ server.app.use(bodyParser.urlencoded({extended:true}))
 server.app.use('/',defaulRoutes);
 server.app.use('/trago', tragoRoutes);
 
-mongoose.connect('mongodb+srv://gasper_tragos:<password>@cluster0.4cipbhc.mongodb.net/tragosDb', (error)=>{
+mongoose.connect('mongodb+srv://gasper_tragos:tragos2022@cluster0.4cipbhc.mongodb.net/tragoDb', (error)=>{
     if(error){
         throw error;
     }
